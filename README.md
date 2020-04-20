@@ -3,4 +3,4 @@
 [Source Code](https://github.com/YazanAlmatar99/EggTimer-IOS/blob/master/EggTimer/ViewController.swift)
 ![ScreenShot](https://github.com/YazanAlmatar99/EggTimer-IOS/blob/master/ScreenShot.png | 500x250)
 
-<img src="https://github.com/YazanAlmatar99/EggTimer-IOS/blob/master/ScreenShot.png" width="48">
+<img src="https://github.com/YazanAlmatar99/EggTimer-IOS/blob/master/ScreenShot.png" width="350">
