@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     var player: AVAudioPlayer?
     
     
-    let eggTimes:[String: Int] = ["Soft":5,"Medium":7,"Hard":12]
+    let eggTimes:[String: Int] = ["Soft":240,"Medium":360,"Hard":720]
     
     @IBAction func hardnessSelected(_ sender: UIButton) {
         //the invalidate function will deactivate the previous timer so we only have 1 timer runnning at atime
@@ -30,17 +30,14 @@ class ViewController: UIViewController {
         timer.invalidate()
      
         totalTime = eggTimes[hardness]!
-        print(secondsPassed)
                timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateCounter), userInfo: nil, repeats: true)
     }
     @objc func updateCounter() {
         if secondsPassed < totalTime {
             secondsPassed += 1
             let percentageProgress = Float(secondsPassed) / Float(totalTime)
-            print (percentageProgress)
 
             progressBar.progress = percentageProgress
-            print("\(totalTime) seconds")
         } else {
             timer.invalidate()
             titleLabel.text = "Done"
